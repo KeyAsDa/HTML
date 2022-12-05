@@ -1,0 +1,32 @@
+p{
+	width: 200px;
+	background: red;
+	font-size: 85px;
+	text-align: center;
+	margin: 20px;
+}
+
+#p1{
+	animation-name: rotateAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+
+#p2{
+	animation-name: colorAnimation;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
+}
+
+@keyframes colorAnimation{
+	0%{background-color: red;}
+	20%{background-color: blue;}
+	40%{background-color: yellow;}
+	60%{background-color: gray;}
+	80%{background-color: green;}
+	100%{background-color: orange;}
+} 
+
+@keyframes rotateAnimation{
+	100%{transform: rotate(360deg);}
+}
